@@ -6,16 +6,27 @@ export const BookList = () => {
   const state = useTypedSelector((state) => state.book.items);
 
   return (
-    <div className={styles.wrapper}>
-      {state.map((book) => (
-        <BookItem
-          key={book.id}
-          author={book.author}
-          title={book.title}
-          image={book.image}
-          id={book.id}
-        />
-      ))}
-    </div>
+    <>
+      {' '}
+      {state.length ? (
+        <>
+          {' '}
+          <h1>Всего книг {state.length}</h1>
+          <div className={styles.wrapper}>
+            {state.map((book) => (
+              <BookItem
+                key={book.id}
+                author={book.author}
+                title={book.title}
+                image={book.image}
+                id={book.id}
+              />
+            ))}
+          </div>
+        </>
+      ) : (
+        <h1>Список книг пуст</h1>
+      )}
+    </>
   );
 };
