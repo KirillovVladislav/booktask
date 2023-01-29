@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+    form {
+        padding: 15px;
+        border-radius: 15px;
+        background-color: #fff;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        .author { 
+            margin-bottom: 10px;
+        
+            label {
+                margin-right: 36px;
+            }
+        
+            input { 
+                padding: 5px;
+                outline: none;
+            }
+        }
+        
+        .title { 
+            margin-bottom: 10px;
+        
+            label {
+                margin-right: 15px;
+            }
+        
+            input { 
+                padding: 5px;
+                outline: none;
+            }
+        }
+    
+        .formBtn {
+            padding: 5px;
+            display: block;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    
+        .imgForm {
+            object-fit: cover;
+        }
+     }
+ }
