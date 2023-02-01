@@ -4,14 +4,14 @@ import styles from './BookList.module.scss';
 
 export const BookList = () => {
   const state = useTypedSelector((state) => state.book.items);
-
+  
   return (
     <>
       {' '}
       {state.length ? (
         <>
           {' '}
-          <h1>Всего книг {state.length}</h1>
+          <h1>Всего книг было куплено  {state.length}</h1>
           <div className={styles.wrapper}>
             {state.map((book) => (
               <BookItem
